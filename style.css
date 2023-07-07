@@ -1,0 +1,87 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: #37505c;
+  width: 100%;
+}
+.app {
+  width: 300px;
+}
+.player {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#palyerText {
+  width: 100%;
+  text-align: center;
+  border-radius: 14px;
+  font-size: 50px;
+  font-family: "Finger Paint", cursive;
+  color: #f2c14e;
+  margin: 0;
+}
+#btn {
+  border-radius: 12px;
+  padding: 7px;
+  border: none;
+  margin-top: 20px;
+  font-family: "Finger Paint", cursive;
+  font-size: 20px;
+  background-color: #f2c14e;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  background-color: #37505c;
+  margin-top: 25px;
+}
+.win {
+  background-color: #4be54b7e;
+}
+.draw {
+  color: rgb(148, 27, 27) !important;
+  border-color: rgb(148, 27, 27) !important;
+}
+.drawbtn {
+  background-color: rgb(148, 27, 27) !important;
+  color: white;
+}
+.square {
+  width: 100px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px solid #f2c14e;
+  border-bottom: 2px solid #f2c14e;
+  box-sizing: border-box;
+  font-family: "Finger Paint", cursive;
+  color: #f2c14e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 70px;
+}
+.square:hover {
+  background-color: #7b766a7e;
+  cursor: pointer;
+}
+
+.square:nth-child(3n) {
+  border-right: none;
+}
+.square:nth-child(6) ~ .square {
+  border-bottom: none;
+}
